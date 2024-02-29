@@ -42,7 +42,7 @@ public class BackendController {
 			String ip = request.getRemoteAddr();
 			String remoteHost=request.getRemoteHost();
 			
-			System.out.println(LocalDateTime.now()+":bakendapp callerip url is called:");
+			System.out.println(LocalDateTime.now()+":bakendapp callerip url is called. Caller IP address:"+ip+". Request Remote Host:"+remoteHost);
 			return "Caller IP address:"+ip+". Request Remote Host:"+remoteHost;
 		}
 	
